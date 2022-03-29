@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 1)), url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-page{
+    background-color: white;
+}
+
+
+main{
+    max-width: 50rem;
+    margin: 0rem auto;
+    border: 1px solid black;
+    height: 100%;
+}
+
+header{
+    color: rgb(202, 202, 202);
+    text-align: center;
+    background-color: rgb(14, 14, 14);
+    height: 10rem;
+    padding-top: 1rem;
+    
+}
+
+.title{
+    margin: 2rem;
+}
+
+h1{
+    font-weight: 400;
+    color: white;
+}
+h2{
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.page{
+    display: flex;
+
+}
+
+.left-col{
+    border-top: 2px solid rgb(31, 30, 30);
+    max-width: 16rem;
+    height: auto;
+    background-color: rgb(17, 17, 17);
+    color: rgb(202, 202, 202);
+    padding-bottom: 5rem;
+}
+
+.button {
+    margin: 2rem auto;
+    text-align: center; 
+    border: 1px solid grey;
+    padding: 1rem ;
+    width: 8rem;
+    cursor: pointer;
+    font-weight: 400;
+}
+ul{
+    position:relative;
+    display: inline-block;  
+    list-style: none;
+    width:100%;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
+
+  a{
+      position: relative;
+      text-decoration: none;
+      color: rgb(202, 202, 202);
+      padding: 0px 5px;
+  }
+  a::after{
+      content: "";
+      position: absolute;
+      background-color: #adadad;
+      height: 2px;
+      width: 0;
+      left: 0%;
+      bottom: -2px; 
+      transition: 0.3s;
+  }
+  a:hover::after{
+      width: 100%;
+      color: white;
+  }
+
+  li{
+      margin: 1rem;
+  }
+
+.profile{
+    max-width: 35rem;
+    margin: 2rem 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid grey;
+}
+
+h4{
+    text-align: center;
+    font-weight: 600;
+}
+
+.grid-container{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid grey;
+}
+
+h5{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects{
+    margin: 2rem;
+}
+.project{
+    margin: .5rem;
+    padding: 1rem;
+    border: 1px solid grey;
+    box-shadow: .3rem .3rem .6rem;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 177);
+}
+
+.project-link{
+    color: rgb(78, 78, 78);
+}
+
+.edu-link{
+    color: black;
+}
+
+.education{
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid grey;
+}
+
+@media screen and (max-width:800px){
+    .grid-container{
+        grid-template-columns: 1fr;
+}
+.left-col{
+    height: auto;
+}
+}
+
